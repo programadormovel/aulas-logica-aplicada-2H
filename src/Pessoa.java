@@ -1,6 +1,6 @@
-public class Pessoa {
+public class Pessoa extends Animal {
     // Atributos da classe
-    public String nome;
+
     public String sobrenome;
     // métodos da classe
     public void falar(){
@@ -12,5 +12,10 @@ public class Pessoa {
 
     public Pessoa criarPessoa(){
         return new Pessoa();
+    }
+
+    // sobrescrita do método
+    public void comer(){
+        System.out.println("pessoa comeu");
     }
 }
